@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="logo.png" class="logo">
+    <button id="toggleDark" class="dark-btn">🌙</button>
+</header>
+
+<div class="container" style="text-align:center;">
+    <h1>Quiz Completed 🎉</h1>
+    <h2 id="scoreText"></h2>
+    <a href="index.html" class="btn">Go Home</a>
+</div>
+
+<script>
+document.getElementById("scoreText").innerText =
+ "Your Score: " + localStorage.getItem("score") + " / " + localStorage.getItem("total");
+
+if(localStorage.getItem("darkmode")==="enabled"){
+    document.body.classList.add("dark");
+}
+
+document.getElementById("toggleDark").onclick = ()=>{
+    document.body.classList.toggle("dark");
+    localStorage.setItem("darkmode", document.body.classList.contains("dark")?"enabled":"disabled");
+};
+</script>
+
+</body>
+</html>

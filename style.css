@@ -1,0 +1,167 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f2f4f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 12px 25px;
+    border-bottom: 2px solid #e3e6eb;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.logo {
+    height: 60px;
+}
+
+#timer {
+    font-size: 22px;
+    font-weight: 600;
+    background: #1a73e8;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 10px;
+}
+
+/* Dark mode toggle */
+.dark-btn {
+    padding: 8px 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    background: #1a73e8;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.dark-btn:hover {
+    background: #0f59b8;
+}
+
+/* Container */
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #e3e6eb;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #c9ced6;
+    outline: none;
+    margin: 12px 0;
+    background: #f9fafc;
+    transition: 0.2s;
+}
+input:focus {
+    border-color: #1a73e8;
+    background: #ffffff;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    background: #1a73e8;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.25s;
+}
+.btn:hover {
+    background: #0f59b8;
+}
+
+/* Question */
+#question {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+/* Options */
+.option {
+    padding: 14px;
+    background: #f7f9fc;
+    border: 1px solid #dce1e7;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 17px;
+}
+.option:hover {
+    border-color: #1a73e8;
+    background: #e9f1ff;
+    transform: translateX(6px);
+}
+
+/* DISABLED OPTIONS */
+.option:disabled {
+    opacity: 0.6;
+}
+
+/* DARK MODE */
+.dark {
+    background: #0f1115;
+    color: white;
+}
+
+.dark header {
+    background: #1a1d24;
+    border-bottom: 2px solid #2a2f38;
+}
+
+.dark .container {
+    background: #1a1d24;
+    border: 1px solid #2d323c;
+    color: white;
+}
+
+.dark input {
+    background: #2a2f38;
+    color: white;
+    border-color: #444a55;
+}
+.dark input:focus {
+    background: #22262d;
+    border-color: #4d8cff;
+}
+
+.dark .btn {
+    background: #4d8cff;
+}
+.dark .btn:hover {
+    background: #3c6ecc;
+}
+
+.dark .option {
+    background: #2a2f38;
+    border-color: #3a404a;
+}
+.dark .option:hover {
+    background: #3a404a;
+    border-color: #4d8cff;
+}
